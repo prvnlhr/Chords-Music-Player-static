@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Music Player</title>
+	<link rel="stylesheet" type="text/css" href="main-page2.css">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+
+</head>
+
+<body>
+	<!-- body is divided into 3 rows  
+		1. top Search-section
+		2. middle container-section
+		3. Bottom Player-section   ----->
+		<!-- NOTE 1:-Container-section containes all the main content of the website
+		      i.e carousel-section , latest-releases-section , popular-artists-setion , genre-section , category-section and latest Hindi/English releases-section-->
+		<!-- NOTE 2: Every section in website has overflow-x property, i,e when width falls below a specified limit, Horizontal-Scrolling can be done to view content
+					Horizontal scrolling is available in popular-artist-section , genre-section , latest Hindi/English   -->
+
+<!-- _________________________________________________________Mini-player-section____________________________________________________________________________________________________ -->
+<!--NOTE:- when max-width is 500px and max-height falls below 450px a miniplayer window opens with simplified controls for playlist and artists  -->
+			
+
+				<div class="mini-player-div">
+					
+					<div class="nav-bar">
+						
+						<div class="playlist-section">
+							<label for="toggle1"><div id="playlist-heading-div"><p>Playlist</p></div></label>
+
+							<input type="checkbox" class="checkbox" id="toggle1">
+							<div class="playlist-menu">
+
+								<div class="queue">
+	                            	<div id="queue-num-div"><p id="queue-num">01</p></div>
+	                                <div id="queue-image-div"><img src="images/q1.jpg"></div> 
+	                                <div class="song-attribute-div"><p id="song">Ek Tarfa</p><p id="singer"> Darshan Raval</p></div>
+	                                <div id="like-div"><img src="images/heart.png"></div>
+                            	</div>
+                            	  	<div class="queue">
+		                                <div id="queue-num-div"><p id="queue-num">02</p></div>
+		                                <div id="queue-image-div"><img src="images/q2.jpg"></div> 
+		                                <div class="song-attribute-div"><p id="song">Believer</p><p id="singer">Imagine Dragons</p></div>
+		                                <div id="like-div"><img src="images/heart.png"></div>
+                            		</div>
+
+                                     <div class="queue">
+                                    	<div id="queue-num-div"><p id="queue-num">03</p></div>
+                                     	<div id="queue-image-div"><img src="images/q3.jpg"></div> 
+                                     	<div class="song-attribute-div"><p id="song">Shayad</p><p id="singer">Arijit Singh</p></div>
+                                     	<div id="like-div"><img src="images/heart.png"></div>
+                                    </div>
+                                     <div class="queue">
+                                    	<div id="queue-num-div"><p id="queue-num">04</p></div>
+                                     	<div id="queue-image-div"><img src="images/q4.jpg"></div> 
+                                     	<div class="song-attribute-div"><p id="song">Lovely</p><p id="singer">Khalid</p></div>
+                                     	<div id="like-div"><img src="images/heart.png"></div>
+                                    </div>
+                                     <div class="queue">
+                                    	<div id="queue-num-div"><p id="queue-num">05</p></div>
+                                     	<div id="queue-image-div"><img src="images/q5.jpg"></div> 
+                                     	<div class="song-attribute-div"><p id="song">I am Not A Cynic</p><p id="singer">Alec Benjamin</p></div>
+                                     	<div id="like-div"><img src="images/heart.png"></div>
+                                    </div>
+                                     <div class="queue">
+                                    	<div id="queue-num-div"><p id="queue-num">06</p></div>
+                                     	<div id="queue-image-div"><img src="images/q6.jpg"></div> 
+                                     	<div class="song-attribute-div"><p id="song">Hold On</p><p id="singer">Chord Overstreet</p></div>
+                                     	<div id="like-div"><img src="images/heart.png"></div>
+                                    </div>
+                                     <div class="queue">
+                                    	<div id="queue-num-div"><p id="queue-num">07</p></div>
+                                     	<div id="queue-image-div"><img src="images/q7.jpg"></div> 
+                                     	<div class="song-attribute-div"><p id="song">Laal Bindi</p><p id="singer">Akull</p></div>
+                                     	<div id="like-div"><img src="images/heart.png"></div>
+                                    </div>
+                                     <div class="queue">
+                                    	<div id="queue-num-div"><p id="queue-num">08</p></div>
+                                     	<div id="queue-image-div"><img src="images/q8.jpg"></div> 
+                                     	<div class="song-attribute-div"><p id="song">B Praak</p><p id="singer">Teri Metti</p></div>
+                                     	<div id="like-div"><img src="images/heart.png"></div>
+                                    </div>
+                                     <div class="queue">
+                                    		<div id="queue-num-div"><p id="queue-num">09</p></div>
+                                     	<div id="queue-image-div"><img src="images/q9.jpg"></div> 
+                                     	<div class="song-attribute-div"><p id="song">Derniere danse</p><p id="singer">Indila</p></div>
+                                     	<div id="like-div"><img src="images/heart.png"></div>
+                                    </div>
+
+                                     <div class="queue">
+                                    	<div id="queue-num-div"><p id="queue-num">10</p></div>
+                                     	<div id="queue-image-div"><img src="images/q10.jpg"></div> 
+                                     	<div class="song-attribute-div"><p id="song">Tenu Na </p><p id="singer">Asees Kaur</p></div>
+                                     	<div id="like-div"><img src="images/heart.png"></div>
+                                    </div>
+
+                                     <div class="queue">
+                                    	<div id="queue-num-div"><p id="queue-num">11</p></div>
+                                     	<div id="queue-image-div"><img src="images/q11.jpg"></div> 
+                                     	<div class="song-attribute-div"><p id="song">O Khuda </p><p id="singer">Amaal Malik</p></div>
+                                     	<div id="like-div"><img src="images/heart.png"></div>
+                                    </div>
+
+                                     <div class="queue">
+                                    	<div id="queue-num-div"><p id="queue-num">12</p></div>
+                                     	<div id="queue-image-div"><img src="images/q12.jpg"></div> 
+                                     	<div class="song-attribute-div"><p id="song">Nai Chaida </p><p id="singer">Lisa Mishra</p></div>
+                                     	<div id="like-div"><img src="images/heart.png"></div>
+                                    </div>
+								
+							</div>
+						</div>
+
+							<!-- <div class="player">
+								
+							</div> -->
+
+					
+								
+
+						<div class="artists-section">
+							<label for="toggle2"><div id="playlist-heading-div"><p>Artists</p></div></label>
+							<input type="checkbox" class="checkbox" id="toggle2">
+
+							<div class="artists-menu">
+								<div class="mp-artists-box"><img src="images/img4.jpg"></div>
+								<div class="mp-artists-box"><img src="images/img5.jpg"></div>
+								<div class="mp-artists-box"><img src="images/img6.jpg"></div>
+							</div>
+						</div>
+
+					</div>
+					<div class="content-box">
+
+							<div class="current-song-cover">
+								<img src="images/q12.jpg">
+
+							</div>
+								<p id="current-song-name">Nai Chaida - Lisa Mishra</p>
+					</div>
+					<div class="bottom-player-bar">
+
+						<div class="mp-button-container">
+							<div id="back-button-div"><img src="images/reverse.png"></div>
+							<div id="play-button-div"><img src="images/play-button.png"></div>
+							<div id="forward-button-div"><img src="images/forward.png"></div>
+						</div>
+
+						<div class="mp-slider-container">
+							<span>2:45</span><input type="range" min="0" max="100" value="50" class="slider" id="slider"><span>4:44</span>
+						</div>
+						
+						
+					</div>
+					
+				</div>
+<!-- ___________Mini-player section ends here!______________________________________________________________________________________________________________ -->
+
+
+<!-- ___________________________________________Search-section : Top most section of the body which contains the search bar_______________________________________________________________________ -->
+				<div class="search-section">
+					<div class="logo-div">
+ 						
+ 						<div class="line" id="line1"></div>
+ 						<div class="line" id="line2"></div>
+ 						<div class="line" id="line3"></div>
+ 						<div class="line" id="line4"></div>
+ 						<div class="line" id="line3"></div>
+ 						<div class="line" id="line2"></div>
+ 						<div class="line" id="line1"></div>
+ 	
+ 					</div>
+					
+					<div class="search-box-div">
+						
+						  <div id="search-box-wrapper"><div id="search-icon-div"><img class="search-icon" src="images/search-icon.png"></div><input type="text" name="text" placeholder="Search song"></div>
+						  <img id="bell-icon" src="images/bell.png">
+					</div>
+					<div class="user-div"><img src="images/user.png"></div>
+
+				</div>
+			
+				
+<!-- Container-section begins_____________________________________________________________________________________________________________________________________________________________ -->
+				<div class="container-section">
+
+
+		<!--Container is divided into two parts:
+			1.Left-section : Carousel ,popular-artist ,genre-section, category-section, latest-releases section, Hindi/English section.
+			2.Right-section :Queue section.  
+		-->
+
+
+
+<!-_________________________________Left-section begins___________________________________________________________________________________________________________________________________________  -->
+					<div class="left-section">
+
+
+
+<!-- ________________________________________________Carousel-section___________________________________________________________________________________________________________________________ -->
+						<div class="carousel-section">
+							<div class="carousel-image-div" id="carousel-image-div1"><img src="images/cr1.jpg"></div>
+							<div class="carousel-image-div" id="carousel-image-div2"><img src="images/cr2.jpg"></div>
+							<div class="carousel-image-div" id="carousel-image-div3"><img src="images/cr3.jpg"></div>
+						</div>
+
+
+
+
+
+<!-- __________________________________________________Latest Releases-section__________________________________________________________________________________________________________________ -->
+						<p id="section-titles">Latest Release</p>
+						
+						<div class="latest-release-section">
+							
+
+
+
+							<div class="latest-release-div" id="latest-release-div1">
+								<div id="latest-release-image-div"><img src="images/ltr.jpg"></div>
+								<div id="latest-release-name-date-div"><p id="LR_name">Onism</p><p id="LR_date">JUL 17, 2020</p></div>
+							
+
+
+								<div id="latest-release-timer-div">
+									<p id="LR_timer">4:44</p>
+									<div class="menu-box">
+										<label id="dot-button" for="menu-button1" ><img src="images/dots.png"></label>
+										<input class="menu-checkbox" type="checkbox" id="menu-button1" >
+
+										<div class="menu">
+											<p>Play Now</p>
+											<hr>
+											<p>Add To Queue </p>
+											<hr>
+	                                		<p>Add To Favourites</p>
+	                                		<hr>
+	                                		<p>Get info</p>
+	                            		</div>
+	                            	</div>
+	                            </div>
+							</div>
+
+
+							<div class="latest-release-div" id="latest-release-div2">
+								<div id="latest-release-image-div"><img src="images/ltr.jpg"></div>
+								<div id="latest-release-name-date-div"><p id="LR_name">Onism</p><p id="LR_date">JUL 17, 2020</p></div>
+								<div id="latest-release-timer-div">
+									<p id="LR_timer">4:44</p>
+									
+									<div class="menu-box">
+										<label id="dot-button" for="menu-button2" ><img src="images/dots.png"></label>
+										<input class="menu-checkbox" type="checkbox" id="menu-button2" >
+
+										<div class="menu">
+											<p>Play Now</p>
+											<hr>
+											<p>Add To Queue </p>
+											<hr>
+	                                		<p>Add To Favourites</p>
+	                                		<hr>
+	                                		<p>Get info</p>
+	                            		</div>
+	                            	</div>
+								</div>
+							</div>
+
+							<div class="latest-release-div" id="latest-release-div3">
+								<div id="latest-release-image-div"><img src="images/ltr.jpg"></div>
+								<div id="latest-release-name-date-div"><p id="LR_name">Onism</p><p id="LR_date">JUL 17, 2020</p></div>
+								<div id="latest-release-timer-div">
+									<p id="LR_timer">4:44</p>
+									
+									<div class="menu-box">
+										<label id="dot-button" for="menu-button3" ><img src="images/dots.png"></label>
+										<input class="menu-checkbox" type="checkbox" id="menu-button3" >
+
+										<div class="menu">
+											<p>Play Now</p>
+											<hr>
+											<p>Add To Queue </p>
+											<hr>
+	                                		<p>Add To Favourites</p>
+	                                		<hr>
+	                                		<p>Get info</p>
+	                            		</div>
+	                            	</div>
+								</div>
+							</div>
+
+
+							<div class="latest-release-div" id="latest-release-div4">
+								<div id="latest-release-image-div"><img src="images/ltr.jpg"></div>
+								<div id="latest-release-name-date-div"><p id="LR_name">Onism</p><p id="LR_date">JUL 17, 2020</p></div>
+								<div id="latest-release-timer-div">
+									<p id="LR_timer">4:44</p>
+									
+									<div class="menu-box">
+										<label id="dot-button" for="menu-button4" ><img src="images/dots.png"></label>
+										<input class="menu-checkbox" type="checkbox" id="menu-button4" >
+
+										<div class="menu">
+											<p>Play Now</p>
+											<hr>
+											<p>Add To Queue </p>
+											<hr>
+	                                		<p>Add To Favourites</p>
+	                                		<hr>
+	                                		<p>Get info</p>
+	                            		</div>
+	                            	</div>
+								</div>
+							</div>
+						
+
+
+
+						</div>
+
+
+
+
+
+
+
+<!-- _________________________________________________Popular-artists section________________________________________________________________________________________________________________________ -->
+					
+						<p id="section-titles">Popular Artists</p>
+						<div class="popular-artist-section-wrapper">
+							<div class="popular-artist-section">
+								
+								<a href="single-screen.html"><div class="artist-image-div" id="artist1-image-div"><img src="images/coldplay.jpg"><div class="popular-artist-hovericon-div"><img src="images/play-icon.png"></div></div></a>
+								
+
+								<a href="single-screen.html"><div class="artist-image-div" id="artist2-image-div"><img src="images/taylor.jpg"><div class="popular-artist-hovericon-div"><img src="images/play-icon.png"></div></div></a>
+
+
+								<a href="single-screen.html"><div class="artist-image-div" id="artist3-image-div"><img src="images/charlie.jpg"><div class="popular-artist-hovericon-div"><img src="images/play-icon.png"></div></div></a>
+
+
+								<a href="single-screen.html"><div class="artist-image-div" id="artist4-image-div"><img src="images/imagine.jpg"><div class="popular-artist-hovericon-div"><img src="images/play-icon.png"></div></div></a>
+								
+								<a href="single-screen.html"><div class="artist-image-div" id="artist5-image-div"><img src="images/khalid.jpg"><div class="popular-artist-hovericon-div"><img src="images/play-icon.png"></div></div></a>
+
+								<a href="single-screen.html"><div class="artist-image-div" id="artist6-image-div"><img src="images/camila.jpg"><div class="popular-artist-hovericon-div"><img src="images/play-icon.png"></div></div></a>
+								
+								
+							
+								<div class="artist-name-div" id="artist1-name-div"><p>Coldplay</p></div>
+								<div class="artist-name-div" id="artist1-name-div"><p>Taylor Swift</p></div>
+								<div class="artist-name-div" id="artist1-name-div"><p>Charlie Puth</p></div>
+								<div class="artist-name-div" id="artist1-name-div"><p>Imagine Dragons</p></div>
+								<div class="artist-name-div" id="artist1-name-div"><p>Khalid</p></div>
+								<div class="artist-name-div" id="artist1-name-div"><p>Camila Cabello</p></div>
+								
+							</div>
+
+						</div>
+
+
+
+
+
+
+
+
+<!-- _______________________________________________Genre-section_____________________________________________________________________________________________________________________________________ -->
+						
+						<div class="genre-section-wrapper">
+							<div class="genre-section">
+								<div class="genre-section-square-div" id="genre-square-img"><img src="images/station.jpg"></div>
+								<div class="genre-section-circle-div" id="genre-circle1-img" ><p>Love</p></div>
+								<div class="genre-section-circle-div" id="genre-circle2-img"><p>Retro</p></div>
+								<div class="genre-section-circle-div" id="genre-circle3-img"><p>Chill</p></div>
+								<div class="genre-section-circle-div" id="genre-circle4-img"><p>Workout</p></div>
+								<div class="genre-section-circle-div" id="genre-circle5-img"><p>Rock</p></div>
+								<div class="genre-section-circle-div" id="genre-circle6-img"><p>Pop</p></div>
+							</div>
+							
+						</div>
+						
+
+
+
+
+
+
+
+
+
+
+
+<!-- ________________________________________________Category-section______________________________________________________________________________________________________________________________ -->
+						
+						<div class="category-section">
+
+							<div class="category-image-div" id="category-image-div1">
+								<img src="images/party.jpg">
+								<div class="overlay-gradient" id="category1-gradient"><p>Party</p></div>
+							</div>
+
+							<div class="category-image-div" id="category-image-div2">
+								<img src="images/electronic.jpg">
+								<div class="overlay-gradient" id="category2-gradient"><p>Electronics</p></div>
+							</div>
+
+							<div class="category-image-div" id="category-image-div3">
+								<img src="images/road-trip.jpg">
+								<div class="overlay-gradient" id="category3-gradient"><p>road-trip</p></div>
+							</div>
+
+						</div>
+
+
+
+
+
+<!-- ______________________________________________Latest English/Hindi -releases-section_____________________________________________________________________________________________________________________ -->
+					
+						<p id="section-titles">Latest English</p>
+						<div class="latest-language-section" id="latest-english-section">
+							
+							<div class="image-div" id="english-image-div1"><img src="images/img1.jpg"></div>
+							<div class="image-div" id="english-image-div1"><img src="images/img2.jpg"></div>
+							<div class="image-div" id="english-image-div1"><img src="images/img3.jpg"></div>
+							<div class="image-div" id="english-image-div1"><img src="images/img4.jpg"></div>
+							<div class="image-div" id="english-image-div1"><img src="images/img5.jpg"></div>
+							<div class="image-div" id="english-image-div1"><img src="images/img6.jpg"></div>
+							<div class="name-date-div"><p id="Name">Closer - Halsey</p><p id="Date">17 JUL 2020</p></div>
+							<div class="name-date-div"><p id="Name">Lover - Taylor Swift</p><p id="Date">17 JUL 2020</p></div>
+							<div class="name-date-div"><p id="Name">Sugar - Maroon 5</p><p id="Date">17 JUL 2020</p></div>
+							<div class="name-date-div"><p id="Name">I Got You - BeBe</p><p id="Date">17 JUL 2020</p></div>
+							<div class="name-date-div"><p id="Name">Euphoria - Ariana</p><p id="Date">17 JUL 2020</p></div>
+							<div class="name-date-div"><p id="Name">New Rules - Dua Lipa</p><p id="Date">17 JUL 2020</p></div>
+						</div>
+
+						<p id="section-titles">Latest Hindi</p>
+						<div class="latest-language-section" id="latest-hindi-section">
+							<div class="image-div" id="hindi-image-div1"><img src="images/h1.jpg"></div>
+							<div class="image-div" id="hindi-image-div1"><img src="images/h2.jpg"></div>
+							<div class="image-div" id="hindi-image-div1"><img src="images/h3.jpg"></div>
+							<div class="image-div" id="hindi-image-div1"><img src="images/h4.jpg"></div>
+							<div class="image-div" id="hindi-image-div1"><img src="images/h5.jpg"></div>
+							<div class="image-div" id="hindi-image-div1"><img src="images/h6.jpg"></div>
+							<div class="name-date-div"><p id="Name">Ghungroo - Arijit Singh</p><p id="Date">17 JUL 2020</p></div>
+							<div class="name-date-div"><p id="Name">Manjha - Vishal Mishra</p><p id="Date">17 JUL 2020</p></div>
+							<div class="name-date-div"><p id="Name">Laal Bindi - Akull</p><p id="Date">17 JUL 2020</p></div>
+							<div class="name-date-div"><p id="Name">Black - Guru</p><p id="Date">17 JUL 2020</p></div>
+							<div class="name-date-div"><p id="Name">Ishq Metha - Palak </p><p id="Date">17 JUL 2020</p></div>
+							<div class="name-date-div"><p id="Name">Shayad - Arijit Singh</p><p id="Date">17 JUL 2020</p></div>
+
+						</div>
+
+
+
+
+
+						<!-- <div class="void"></div> -->
+					</div>
+<!-- ___________Left-section ends______________________________________________________________________________________________________________________________________________________________ -->
+					
+
+
+<!-- ___________Right-section Begins____________________________________________________________________________________________________________________________________________________________________ -->
+					
+	<!--1. Right section contains Queue   
+	    2. Below max-width of 750px right section collapses and a hamburger menu pops
+		3. clicking Hamburger triggers the right section and vice-versa
+		4. this make the container-section responsive-->
+
+
+					<label for="toggle" id="hambug">&#9776;</label>
+					<input type="checkbox" id="toggle">
+					
+	<div class="right-section">
+				
+				<!--________Queue heading sections. Contains heading and Downa-arrow for dropdown options__________________________  -->
+						<div class="queue-header-section">
+							
+							<div class="heading-div">
+								<p id="queue-heading">My Playlist</p>
+							</div>
+
+							<div class="dropdown-section">	
+								<label for="dropdown" id="drop-arrow"><span>Queue</span><img src="images/drop-arrow.png"></label>
+								<input type="checkbox" id="dropdown">
+								<div class="dropdown-menu">
+									<p>Playlist</p>
+									<hr>
+									<p>Favourite Songs</p>										
+								</div>
+							</div>
+						</div>
+
+				<!--__________Main queue contents___________________________________________________________________________________ -->
+						<div class="queue-list-section">
+							
+							<div class="queue">
+                            	<div id="queue-num-div"><p id="queue-num">01</p></div>
+                                <div id="queue-image-div"><img src="images/q1.jpg"></div> 
+                                <div class="song-attribute-div"><p id="song">Ek Tarfa</p><p id="singer"> Darshan Raval</p></div>
+                                <div id="like-div"><img src="images/heart.png"></div>
+                            </div>
+
+                            <div class="queue">
+                                <div id="queue-num-div"><p id="queue-num">02</p></div>
+                                <div id="queue-image-div"><img src="images/q2.jpg"></div> 
+                                <div class="song-attribute-div"><p id="song">Believer</p><p id="singer">Imagine Dragons</p></div>
+                                <div id="like-div"><img src="images/heart.png"></div>
+                            </div>
+
+                                     <div class="queue">
+                                    	<div id="queue-num-div"><p id="queue-num">03</p></div>
+                                     	<div id="queue-image-div"><img src="images/q3.jpg"></div> 
+                                     	<div class="song-attribute-div"><p id="song">Shayad</p><p id="singer">Arijit Singh</p></div>
+                                     	<div id="like-div"><img src="images/heart.png"></div>
+                                    </div>
+                                     <div class="queue">
+                                    	<div id="queue-num-div"><p id="queue-num">04</p></div>
+                                     	<div id="queue-image-div"><img src="images/q4.jpg"></div> 
+                                     	<div class="song-attribute-div"><p id="song">Lovely</p><p id="singer">Khalid</p></div>
+                                     	<div id="like-div"><img src="images/heart.png"></div>
+                                    </div>
+                                     <div class="queue">
+                                    	<div id="queue-num-div"><p id="queue-num">05</p></div>
+                                     	<div id="queue-image-div"><img src="images/q5.jpg"></div> 
+                                     	<div class="song-attribute-div"><p id="song">I am Not A Cynic</p><p id="singer">Alec Benjamin</p></div>
+                                     	<div id="like-div"><img src="images/heart.png"></div>
+                                    </div>
+                                     <div class="queue">
+                                    	<div id="queue-num-div"><p id="queue-num">06</p></div>
+                                     	<div id="queue-image-div"><img src="images/q6.jpg"></div> 
+                                     	<div class="song-attribute-div"><p id="song">Hold On</p><p id="singer">Chord Overstreet</p></div>
+                                     	<div id="like-div"><img src="images/heart.png"></div>
+                                    </div>
+                                     <div class="queue">
+                                    	<div id="queue-num-div"><p id="queue-num">07</p></div>
+                                     	<div id="queue-image-div"><img src="images/q7.jpg"></div> 
+                                     	<div class="song-attribute-div"><p id="song">Laal Bindi</p><p id="singer">Akull</p></div>
+                                     	<div id="like-div"><img src="images/heart.png"></div>
+                                    </div>
+                                     <div class="queue">
+                                    	<div id="queue-num-div"><p id="queue-num">08</p></div>
+                                     	<div id="queue-image-div"><img src="images/q8.jpg"></div> 
+                                     	<div class="song-attribute-div"><p id="song">B Praak</p><p id="singer">Teri Metti</p></div>
+                                     	<div id="like-div"><img src="images/heart.png"></div>
+                                    </div>
+                                     <div class="queue">
+                                    		<div id="queue-num-div"><p id="queue-num">09</p></div>
+                                     	<div id="queue-image-div"><img src="images/q9.jpg"></div> 
+                                     	<div class="song-attribute-div"><p id="song">Derniere danse</p><p id="singer">Indila</p></div>
+                                     	<div id="like-div"><img src="images/heart.png"></div>
+                                    </div>
+
+                                     <div class="queue">
+                                    	<div id="queue-num-div"><p id="queue-num">10</p></div>
+                                     	<div id="queue-image-div"><img src="images/q10.jpg"></div> 
+                                     	<div class="song-attribute-div"><p id="song">Tenu Na </p><p id="singer">Asees Kaur</p></div>
+                                     	<div id="like-div"><img src="images/heart.png"></div>
+                                    </div>
+
+                                     <div class="queue">
+                                    	<div id="queue-num-div"><p id="queue-num">11</p></div>
+                                     	<div id="queue-image-div"><img src="images/q11.jpg"></div> 
+                                     	<div class="song-attribute-div"><p id="song">O Khuda </p><p id="singer">Amaal Malik</p></div>
+                                     	<div id="like-div"><img src="images/heart.png"></div>
+                                    </div>
+
+                                     <div class="queue">
+                                    	<div id="queue-num-div"><p id="queue-num">12</p></div>
+                                     	<div id="queue-image-div"><img src="images/q12.jpg"></div> 
+                                     	<div class="song-attribute-div"><p id="song">Nai Chaida </p><p id="singer">Lisa Mishra</p></div>
+                                     	<div id="like-div"><img src="images/heart.png"></div>
+                                    </div>
+						</div>
+						
+
+					</div>
+<!--_______________________Right-section-ends here !____________________________________________________________________________________________________ -->
+				
+
+				</div>
+<!-- ___Middle Container-section ends here!______________________________________________________________________________________________________________________________________________________________________ -->
+
+
+
+
+
+<!-- _______Bottom-player-section_______________________________________________________________________________________________________________________________________________ -->
+
+<!-- divide into three  coloums:
+     1. current playing song section
+     2. middle section for player controls
+     3. last column for media icons and volume slider-->
+				
+				<div class="bottom-player-section">
+					
+						<!-- <label for="toggle" id="hambug">&#9776;</label>
+						<input type="checkbox" id="toggle" >
+
+							<div class="list-section">
+								<div class="queue1">bjbjb</div>
+                                <div class="queue1">ggg</div>
+                            </div> -->
+
+				<!--________________________________lefmost section for current playing song section  ____________________________-->
+                            <div class="current-song-div">
+                            	<div id="current-song-img-div"><img src="images/current-song.jpg"></div>
+                            	<div id="current-song-attr"><p id="cs-name">Hymn</p><p id="cs-singer">Coldplay</p></div>
+                            	<div id="current-song-like-dislike-div">
+                            		<img src="images/heart.png"> 
+                            		 <img src="images/ban.png">
+                            	</div>
+                            </div>
+                <!--________________________________middle section for player controls____________________________________________  -->
+                            <div class="play-pause-button-div">
+
+                            	<div class="button-container">
+                            		<div id="reverse-div"><img  id="reverse-button" src="images/reverse.png"></div>
+                            		<div id="play-div"><img id="play-button" src="images/play-button.png"></div>
+                            		<div id="forward-div"><img id="forward-button" src="images/forward.png"></div>
+                            	</div>
+
+                            	<div class="slider-contaniner">
+                            		<span>1:45</span><input type="range" min="0" max="100" value="20" class="slider" id="slider"><span>4:44</span>
+                            	</div>
+
+                            </div>
+                <!-- _________________________________rightmost section for media icons and volume slider_______________________________ -->
+
+                		<!-- NOTE: The volume slider disappears below max width of 800px and it gets hover functionality. So on hovering over volume icons volume slider appears -->
+                          
+                            <div class="icons-div">
+                            	<div id="list-div"><img id="media-icon" src="images/list.png"></div>
+                            	<div id="laptop-div"><img id="media-icon" src="images/laptop.png"></div>
+                            	<div id="volume-slider-div"><img id="media-icon" src="images/audio.png"><div class="vol-slider-container"><input type="range" min="0" max="100" value="50" class="vol-slider" id="vol-slider"></div></div>
+                            	<div id="expand-div"><img id="media-icon" src="images/expand.png"></div>
+							</div>
+							</div>
+<!-- ________________________________________________________bottom-player section ends here!________________________________________________________________________________ -->
+</body>
+
+</html>
