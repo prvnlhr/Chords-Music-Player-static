@@ -16,4 +16,7 @@
 ![sc8](https://user-images.githubusercontent.com/70936225/114869450-9d44d300-9e14-11eb-88ed-ac648c878fbe.jpg)
 **Artist Section**
 
+![sc12](https://user-images.githubusercontent.com/70936225/114869702-eb59d680-9e14-11eb-86fc-fb0214c45046.jpg)
+**Minimise view**
+
 
